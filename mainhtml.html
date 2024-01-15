@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual-Code-Editor</title>
+    <link rel="stylesheet" href="maincss.css">
+    <script src="https://kit.fontawesome.com/412a952258.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h4>Virtual - Code - Editor</h4>
+    </header>
+    <div class="bucket">
+        <div class="left">
+            <label> OUTPUT:</label>
+            <iframe id="mainoutput"></iframe>
+        </div>
+        <div class="right">
+            <label><i class="fa-solid fa-code"></i> HTML:</label>
+            <textarea id="mhtml" onkeyup="run()" ></textarea>
+            <label><i class="fa-brands fa-css3"></i> CSS:</label>
+            <textarea id="mcss" onkeyup="run()"></textarea>
+            <label><i class="fa-brands fa-js"></i> JS:</label>
+            <textarea id="mjs" onkeyup="run()"></textarea>
+        </div>
+    </div>      
+    
+<script src="mainjs.js"></script>
+</body>
+</html>
